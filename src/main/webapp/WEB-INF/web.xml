@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CS480 Demo</display-name>
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletCreate</display-name>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <url-pattern>/Entity1ServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Entity1ServletRead</display-name>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <url-pattern>/Entity1ServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletUpdate</display-name>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <url-pattern>/Entity1ServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletDelete</display-name>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <url-pattern>/Entity1ServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletRegister</display-name>
+    <servlet-name>UserServletRegister</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletRegister</servlet-name>
+    <url-pattern>/UserServletRegister</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>InitializeDB</display-name>
+    <servlet-name>InitializeDB</servlet-name>
+    <servlet-class>init.web.servlet.InitializeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitializeDB</servlet-name>
+    <url-pattern>/InitializeDB</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteDB</display-name>
+    <servlet-name>DeleteDB</servlet-name>
+    <servlet-class>init.web.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteDB</servlet-name>
+    <url-pattern>/DeleteDB</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogin</display-name>
+    <servlet-name>UserServletLogin</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogin</servlet-name>
+    <url-pattern>/UserServletLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogout</display-name>
+    <servlet-name>UserServletLogout</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogout</servlet-name>
+    <url-pattern>/UserServletLogout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findAll</display-name>
+    <servlet-name>findAll</servlet-name>
+    
+    <servlet-class>user.web.servlet.findAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAll</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findDoctors</display-name>
+    <servlet-name>findDoctors</servlet-name>
+    
+    <servlet-class>doctor.web.servlet.findDoctors</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findDoctors</servlet-name>
+    <url-pattern>/findDoctors</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findDoctorsH</display-name>
+    <servlet-name>findDoctorsH</servlet-name>
+    
+    <servlet-class>doctor.web.servlet.findDoctorsH</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findDoctorsH</servlet-name>
+    <url-pattern>/findDoctorsH</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findPatients</display-name>
+    <servlet-name>findPatients</servlet-name>
+    
+    <servlet-class>patient.web.servlet.findPatients</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findPatients</servlet-name>
+    <url-pattern>/findPatients</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findPatientsD</display-name>
+    <servlet-name>findPatientsD</servlet-name>
+    
+    <servlet-class>patient.web.servlet.findPatientsD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findPatientsD</servlet-name>
+    <url-pattern>/findPatientsD</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findHospitals</display-name>
+    <servlet-name>findHospitals</servlet-name>
+    
+    <servlet-class>hospital.web.servlet.findHospitals</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findHospitals</servlet-name>
+    <url-pattern>/findHospitals</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorServletCreate</display-name>
+    <servlet-name>DoctorServletCreate</servlet-name>
+    <servlet-class>doctor.web.servlet.DoctorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorServletCreate</servlet-name>
+    <url-pattern>/DoctorServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorServletRead</display-name>
+    <servlet-name>DoctorServletRead</servlet-name>
+    <servlet-class>doctor.web.servlet.DoctorServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorServletRead</servlet-name>
+    <url-pattern>/DoctorServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>DoctorServletDelete</display-name>
+    <servlet-name>DoctorServletDelete</servlet-name>
+    <servlet-class>doctor.web.servlet.DoctorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorServletDelete</servlet-name>
+    <url-pattern>/DoctorServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorServletUpdate</display-name>
+    <servlet-name>DoctorServletUpdate</servlet-name>
+    <servlet-class>doctor.web.servlet.DoctorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorServletUpdate</servlet-name>
+    <url-pattern>/DoctorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findInsurance</display-name>
+    <servlet-name>findInsurance</servlet-name>
+
+    <servlet-class>insurance.web.servlet.findInsurance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findInsurance</servlet-name>
+    <url-pattern>/findInsurance</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PatientServletCreate</display-name>
+    <servlet-name>PatientServletCreate</servlet-name>
+    <servlet-class>patient.web.servlet.PatientServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientServletCreate</servlet-name>
+    <url-pattern>/PatientServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientServletRead</display-name>
+    <servlet-name>PatientServletRead</servlet-name>
+    <servlet-class>patient.web.servlet.PatientServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientServletRead</servlet-name>
+    <url-pattern>/PatientServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PatientServletDelete</display-name>
+    <servlet-name>PatientServletDelete</servlet-name>
+    <servlet-class>patient.web.servlet.PatientServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientServletDelete</servlet-name>
+    <url-pattern>/PatientServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientServletUpdate</display-name>
+    <servlet-name>PatientServletUpdate</servlet-name>
+    <servlet-class>patient.web.servlet.PatientServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientServletUpdate</servlet-name>
+    <url-pattern>/PatientServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HospitalServletCreate</display-name>
+    <servlet-name>HospitalServletCreate</servlet-name>
+    <servlet-class>hospital.web.servlet.HospitalServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HospitalServletCreate</servlet-name>
+    <url-pattern>/HospitalServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HospitalServletRead</display-name>
+    <servlet-name>HospitalServletRead</servlet-name>
+    <servlet-class>hospital.web.servlet.HospitalServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HospitalServletRead</servlet-name>
+    <url-pattern>/HospitalServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>HospitalServletDelete</display-name>
+    <servlet-name>HospitalServletDelete</servlet-name>
+    <servlet-class>hospital.web.servlet.HospitalServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HospitalServletDelete</servlet-name>
+    <url-pattern>/HospitalServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HospitalServletUpdate</display-name>
+    <servlet-name>HospitalServletUpdate</servlet-name>
+    <servlet-class>hospital.web.servlet.HospitalServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HospitalServletUpdate</servlet-name>
+    <url-pattern>/HospitalServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findTotalCount</display-name>
+    <servlet-name>findTotalCount</servlet-name>
+    <servlet-class>hospital.web.servlet.findTotalCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTotalCount</servlet-name>
+    <url-pattern>/findTotalCount</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+   
+  <servlet>
+    <description></description>
+    <display-name>InsuranceServletCreate</display-name>
+    <servlet-name>InsuranceServletCreate</servlet-name>
+    <servlet-class>insurance.web.servlet.InsuranceServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsuranceServletCreate</servlet-name>
+    <url-pattern>/InsuranceServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsuranceServletRead</display-name>
+    <servlet-name>InsuranceServletRead</servlet-name>
+    <servlet-class>insurance.web.servlet.InsuranceServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsuranceServletRead</servlet-name>
+    <url-pattern>/InsuranceServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>InsuranceServletDelete</display-name>
+    <servlet-name>InsuranceServletDelete</servlet-name>
+    <servlet-class>insurance.web.servlet.InsuranceServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsuranceServletDelete</servlet-name>
+    <url-pattern>/InsuranceServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsuranceServletUpdate</display-name>
+    <servlet-name>InsuranceServletUpdate</servlet-name>
+    <servlet-class>insurance.web.servlet.InsuranceServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsuranceServletUpdate</servlet-name>
+    <url-pattern>/InsuranceServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>MedicationServletCreate</display-name>
+    <servlet-name>MedicationServletCreate</servlet-name>
+    <servlet-class>medication.web.servlet.MedicationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicationServletCreate</servlet-name>
+    <url-pattern>/MedicationServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MedicationServletRead</display-name>
+    <servlet-name>MedicationServletRead</servlet-name>
+    <servlet-class>medication.web.servlet.MedicationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicationServletRead</servlet-name>
+    <url-pattern>/MedicationServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>MedicationServletDelete</display-name>
+    <servlet-name>MedicationServletDelete</servlet-name>
+    <servlet-class>medication.web.servlet.MedicationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicationServletDelete</servlet-name>
+    <url-pattern>/MedicationServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MedicationServletUpdate</display-name>
+    <servlet-name>MedicationServletUpdate</servlet-name>
+    <servlet-class>medication.web.servlet.MedicationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicationServletUpdate</servlet-name>
+    <url-pattern>/MedicationServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>findTotalPrice</display-name>
+    <servlet-name>findTotalPrice</servlet-name>
+    <servlet-class>medication.web.servlet.findTotalPrice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTotalPrice</servlet-name>
+    <url-pattern>/findTotalPrice</url-pattern>
+  </servlet-mapping>
+   
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryServletCreate</display-name>
+    <servlet-name>PatientMedicalHistoryServletCreate</servlet-name>
+    <servlet-class>patient_medical_history.web.servlet.PatientMedicalHistoryServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryServletCreate</servlet-name>
+    <url-pattern>/PatientMedicalHistoryServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryServletRead</display-name>
+    <servlet-name>PatientMedicalHistoryServletRead</servlet-name>
+    <servlet-class>patient_medical_history.web.servlet.PatientMedicalHistoryServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryServletRead</servlet-name>
+    <url-pattern>/PatientMedicalHistoryServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryServletDelete</display-name>
+    <servlet-name>PatientMedicalHistoryServletDelete</servlet-name>
+    <servlet-class>patient_medical_history.web.servlet.PatientMedicalHistoryServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryServletDelete</servlet-name>
+    <url-pattern>/PatientMedicalHistoryServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryServletUpdate</display-name>
+    <servlet-name>PatientMedicalHistoryServletUpdate</servlet-name>
+    <servlet-class>patient_medical_history.web.servlet.PatientMedicalHistoryServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryServletUpdate</servlet-name>
+    <url-pattern>/PatientMedicalHistoryServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PatientDoctorServletCreate</display-name>
+    <servlet-name>PatientDoctorServletCreate</servlet-name>
+    <servlet-class>patient_doctor.web.servlet.PatientDoctorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDoctorServletCreate</servlet-name>
+    <url-pattern>/PatientDoctorServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientDoctorServletRead</display-name>
+    <servlet-name>PatientDoctorServletRead</servlet-name>
+    <servlet-class>patient_doctor.web.servlet.PatientDoctorServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDoctorServletRead</servlet-name>
+    <url-pattern>/PatientDoctorServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PatientDoctorServletDelete</display-name>
+    <servlet-name>PatientDoctorServletDelete</servlet-name>
+    <servlet-class>patient_doctor.web.servlet.PatientDoctorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDoctorServletDelete</servlet-name>
+    <url-pattern>/PatientDoctorServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientDoctorServletUpdate</display-name>
+    <servlet-name>PatientDoctorServletUpdate</servlet-name>
+    <servlet-class>patient_doctor.web.servlet.PatientDoctorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDoctorServletUpdate</servlet-name>
+    <url-pattern>/PatientDoctorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistorySurgeriesServletCreate</display-name>
+    <servlet-name>PatientMedicalHistorySurgeriesServletCreate</servlet-name>
+    <servlet-class>patient_medical_history_surgeries.web.servlet.PatientMedicalHistorySurgeriesServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistorySurgeriesServletCreate</servlet-name>
+    <url-pattern>/PatientMedicalHistorySurgeriesServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistorySurgeriesServletRead</display-name>
+    <servlet-name>PatientMedicalHistorySurgeriesServletRead</servlet-name>
+    <servlet-class>patient_medical_history_surgeries.web.servlet.PatientMedicalHistorySurgeriesServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistorySurgeriesServletRead</servlet-name>
+    <url-pattern>/PatientMedicalHistorySurgeriesServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistorySurgeriesServletDelete</display-name>
+    <servlet-name>PatientMedicalHistorySurgeriesServletDelete</servlet-name>
+    <servlet-class>patient_medical_history_surgeries.web.servlet.PatientMedicalHistorySurgeriesServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistorySurgeriesServletDelete</servlet-name>
+    <url-pattern>/PatientMedicalHistorySurgeriesServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistorySurgeriesServletUpdate</display-name>
+    <servlet-name>PatientMedicalHistorySurgeriesServletUpdate</servlet-name>
+    <servlet-class>patient_medical_history_surgeries.web.servlet.PatientMedicalHistorySurgeriesServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistorySurgeriesServletUpdate</servlet-name>
+    <url-pattern>/PatientMedicalHistorySurgeriesServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryMedicationServletCreate</display-name>
+    <servlet-name>PatientMedicalHistoryMedicationServletCreate</servlet-name>
+    <servlet-class>patient_medical_history_medication.web.servlet.PatientMedicalHistoryMedicationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryMedicationServletCreate</servlet-name>
+    <url-pattern>/PatientMedicalHistoryMedicationServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryMedicationServletRead</display-name>
+    <servlet-name>PatientMedicalHistoryMedicationServletRead</servlet-name>
+    <servlet-class>patient_medical_history_medication.web.servlet.PatientMedicalHistoryMedicationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryMedicationServletRead</servlet-name>
+    <url-pattern>/PatientMedicalHistoryMedicationServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryMedicationServletDelete</display-name>
+    <servlet-name>PatientMedicalHistoryMedicationServletDelete</servlet-name>
+    <servlet-class>patient_medical_history_medication.web.servlet.PatientMedicalHistoryMedicationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryMedicationServletDelete</servlet-name>
+    <url-pattern>/PatientMedicalHistoryMedicationServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientMedicalHistoryMedicationServletUpdate</display-name>
+    <servlet-name>PatientMedicalHistoryMedicationServletUpdate</servlet-name>
+    <servlet-class>patient_medical_history_medication.web.servlet.PatientMedicalHistoryMedicationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientMedicalHistoryMedicationServletUpdate</servlet-name>
+    <url-pattern>/PatientMedicalHistoryMedicationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+ 
+  
+    <description></description>
+    <display-name>PaymentServletCreate</display-name>
+    <servlet-name>PaymentServletCreate</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletCreate</servlet-name>
+    <url-pattern>/PaymentServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PaymentServletRead</display-name>
+    <servlet-name>PaymentServletRead</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletRead</servlet-name>
+    <url-pattern>/PaymentServletRead</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PaymentServletDelete</display-name>
+    <servlet-name>PaymentServletDelete</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletDelete</servlet-name>
+    <url-pattern>/PaymentServletDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PaymentServletUpdate</display-name>
+    <servlet-name>PaymentServletUpdate</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletUpdate</servlet-name>
+    <url-pattern>/PaymentServletUpdate</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>findTotalPayments</display-name>
+    <servlet-name>findTotalPayments</servlet-name>
+    <servlet-class>payment.web.servlet.findTotalPayments</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTotalPayments</servlet-name>
+    <url-pattern>/findTotalPayments</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
